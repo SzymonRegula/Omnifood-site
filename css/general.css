@@ -104,6 +104,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--45-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -236,7 +240,7 @@ body {
   outline: none;
   /* outline: 4px dotted #e67e22;
   outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(207, 113, 31, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(207, 113, 31, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
