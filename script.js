@@ -1,16 +1,3 @@
-console.log("Hello world");
-
-const myName = "Szymon Reguła";
-const h1 = document.querySelector(".heading-primary");
-console.log(myName);
-console.log(h1);
-
-// h1.addEventListener("click", function () {
-//   h1.textContent = myName;
-//   h1.style.backgroundColor = "red";
-//   h1.style.padding = "5rem";
-// });
-
 ///////////////////////////////////////////////////////////
 // Set current year
 const yearEl = document.querySelector(".year");
@@ -29,7 +16,7 @@ btnNavEl.addEventListener("click", function () {
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
 const allLinks = document.querySelectorAll("a:link");
-console.log(allLinks);
+
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -58,7 +45,6 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
     if (!ent.isIntersecting) {
       document.body.classList.add("sticky");
     }
@@ -90,7 +76,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
